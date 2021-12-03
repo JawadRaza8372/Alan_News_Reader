@@ -1,0 +1,32 @@
+.secndCrd {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  span {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
