@@ -23,11 +23,15 @@ function App() {
             number?.length > 2
               ? wordsToNumbers(number, { fuzzy: true })
               : number;
-          const newArticle = state[parsedNumber];
+          const newArticle = state[parsedNumber - 1]?.url;
           if (parsedNumber > 20) {
             alanBtn().playText("Sorry. You can only access 20 articles only.");
           } else {
-            window.open(newArticle?.url, "_blank");
+            if (newArticle) {
+              window.open(newArticle, "_blank");
+            } else {
+              alanBtn().playText("Sorry i am unable to proceed");
+            }
           }
         }
       },
